@@ -20,6 +20,8 @@ function Render() {
   const [ error, setError ] = useState('');
   const [ loadMore, setLoadMore ] = useState(false);
   
+  console.log(error);
+
   const requestImage = (name, page) => {
     const value = getApi(name, page)
     
