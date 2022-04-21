@@ -75,10 +75,8 @@ function Render() {
     setModalImage( value.largeImageURL );
   };
   const findPicture = (pictureName) => {
-    if (pictureName !== name && pictureName !== ' ') {
-      setName(pictureName);
-      setPage(1);
-    }
+    setName(pictureName.trim());
+    setPage(1);
   };
 
   return (
